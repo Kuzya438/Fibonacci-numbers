@@ -2,7 +2,6 @@
 #include <cstdlib>
 
 int numbersFibonacci(int variable) {
-
 	if (variable == 0) { return 0; }
 	if(variable == 1){ return 1; }
 	return numbersFibonacci(variable - 1) + numbersFibonacci(variable - 2);
@@ -12,10 +11,9 @@ int main() {
 	setlocale(LC_ALL, "RU");
 
 	int itemNumber{};
-
-	std::cout << "Ââåäèòå ÷èñëî: ";
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‡Ð¸ÑÐ»Ð¾: ";
 	std::cin >> itemNumber;
-	std::cout << "×èñëà Ôèáîíà÷÷è: ";
+	std::cout << "Ð§Ð¸ÑÐ»Ð° Ð¤Ð¸Ð±Ð¾Ð½Ð°Ñ‡Ñ‡Ð¸: ";
 
 	for (int element{}; element < itemNumber; ++element) {
 		std::cout << numbersFibonacci(element) << " ";
